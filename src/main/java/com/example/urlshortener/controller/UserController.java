@@ -11,10 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.urlshortener.Service.UserService;
 import com.example.urlshortener.entity.User;
-import com.example.urlshortener.repository.UserRepository;
 import com.example.urlshortener.utils.JwtUtil;
 
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 
 import static org.springframework.http.HttpStatus.CREATED;
