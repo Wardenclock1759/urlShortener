@@ -31,4 +31,8 @@ public class UserService {
   public User handleUserCreate(User user) {
     return userRepository.CreateUser(user);
   }
+
+  public User getUserByUsername(String username) {
+    return userRepository.GetUserByUsername(username);
+  }
 }

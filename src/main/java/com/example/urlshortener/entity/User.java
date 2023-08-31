@@ -20,6 +20,6 @@ public class User {
   private ArrayList<Link> userLinks;
 
   public User() {
-    userLinks = new ArrayList<>();
+    userLinks = new ArrayList<Link>();
   }
 }

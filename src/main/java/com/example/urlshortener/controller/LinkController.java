@@ -37,7 +37,7 @@ public class LinkController {
     String userJson = checkPermission(request.getCookies());
     
     if (userJson != "") {
-      User user = jsonParser.fromJson(userJson, User.class);
+      User user = userService.getUserByUsername(jsonParser.fromJson(userJson, User.class).getUsername());
       Link newLink = linkService.createLink(user, link);
       if (newLink != null) {
         return ResponseEntity.ok(newLink);
